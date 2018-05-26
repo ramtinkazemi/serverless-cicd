@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Outputs the time
+Resources:
+  TimeFunction:
+    Properties:
+      CodeUri: s3://serverless-cicd-lxgzmy/982e7ff769c4642458f00fb5aa492610
+      Handler: index.handler
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31

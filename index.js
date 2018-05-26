@@ -2,7 +2,7 @@ var time = require('time');
 exports.handler = (event, context, callback) => {
     var currentTime = new time.Date(); 
     currentTime.setTimezone("America/Los_Angeles");
-
+    console.log("second version");
     console.log("another change 1");
     callback(null, {
         statusCode: '200',
