@@ -8,8 +8,11 @@ Resources:
       Handler: index.handler
       Runtime: nodejs6.10
       CodeUri: .
-      Description: ''
-      MemorySize: 128
-      Timeout: 3
-      Role: >-
-        arn:aws:iam::598729648886:role/mycicdstack-TimeFunctionRole-1AFPA32RB8Z9Z
+      AutoPublishAlias: live
+
+      DeploymentPreference:
+        Type: Canary10Percent10Minutes 
+        Alarms:
+          # A list of alarms that you want to monitor
+          # - !Ref AliasErrorMetricGreaterThanZeroAlarm
+          # - !Ref LatestVersionErrorMetricGreaterThanZeroAlarm
