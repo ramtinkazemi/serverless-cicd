@@ -3,7 +3,7 @@ Description: Outputs the time
 Resources:
   TimeFunction:
     Properties:
-      CodeUri: s3://serverless-cicd-lxgzmy/982e7ff769c4642458f00fb5aa492610
+      CodeUri: s3://serverless-cicd-lxgzmy/476d0ccdbc1f483ea6678a36040cefd7
       Handler: index.handler
       Runtime: nodejs6.10
     Type: AWS::Serverless::Function
