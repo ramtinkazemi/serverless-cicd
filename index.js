@@ -3,7 +3,7 @@ exports.handler = (event, context, callback) => {
     var currentTime = new time.Date(); 
     currentTime.setTimezone("America/Los_Angeles");
     console.log("second version");
-    console.log("another change 1");
+    console.log("another change 2");
     callback(null, {
         statusCode: '200',
         body: 'The time in Los Angeles is: ' + currentTime.toString(),
