@@ -8,10 +8,10 @@ Resources:
       Handler: index.handler
       Runtime: nodejs6.10
       CodeUri: .
-      AutoPublishAlias: live
+      AutoPublishAlias: Live
 
       DeploymentPreference:
-        Type: Canary10Percent10Minutes 
+        Type: Linear10PercentEvery1Minute 
         Alarms:
           # A list of alarms that you want to monitor
           # - !Ref AliasErrorMetricGreaterThanZeroAlarm

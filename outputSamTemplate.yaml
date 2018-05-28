@@ -1,9 +1,13 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Description: Outputs the time
+Description: An AWS Serverless Specification template describing your function.
 Resources:
-  TimeFunction:
+  mycicdstackTimeFunctionQQ8HEDFP1V63:
     Properties:
-      CodeUri: s3://serverless-cicd-lxgzmy/476d0ccdbc1f483ea6678a36040cefd7
+      AutoPublishAlias: Live
+      CodeUri: s3://serverless-cicd-lxgzmy/4fbf86dfc51bae4379ea632a3f31f4c7
+      DeploymentPreference:
+        Alarms: null
+        Type: Canary10Percent10Minutes
       Handler: index.handler
       Runtime: nodejs6.10
     Type: AWS::Serverless::Function
