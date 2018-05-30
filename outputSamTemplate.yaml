@@ -4,7 +4,7 @@ Resources:
   mycicdstackTimeFunctionQQ8HEDFP1V63:
     Properties:
       AutoPublishAlias: Live
-      CodeUri: s3://serverless-cicd-lxgzmy/4fbf86dfc51bae4379ea632a3f31f4c7
+      CodeUri: s3://cashrewards.dev.ramtin-test-slscicd/4fbf86dfc51bae4379ea632a3f31f4c7
       DeploymentPreference:
         Alarms: null
         Type: Canary10Percent10Minutes
