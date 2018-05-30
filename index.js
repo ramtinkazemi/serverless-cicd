@@ -3,6 +3,6 @@ exports.handler = (event, context, callback) => {
     console.log("another change 2");
     callback(null, {
         statusCode: '200',
-        body: 'Version 9' ,
+        body: 'Version 10' ,
     });
 };
