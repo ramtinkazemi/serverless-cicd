@@ -2,7 +2,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - aws s3 cp s3://cashrewards.dev.bitbucket/ShopGoDev/serverless-cicd/master/deploy/outputSamTemplate.yaml       
+#      - aws s3 cp s3://cashrewards.dev.bitbucket/ShopGoDev/serverless-cicd/master/deploy/outputSamTemplate.yaml       
       - aws cloudformation package --template-file samTemplate.yaml --s3-bucket cashrewards.dev.bitbucket --s3-prefix ShopGoDev/serverless-cicd/master/deploy --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
