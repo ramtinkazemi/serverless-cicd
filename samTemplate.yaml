@@ -9,6 +9,7 @@ Resources:
       Runtime: nodejs6.10
       CodeUri: .
       AutoPublishAlias: Live
+      
       DeploymentPreference:
         Type: Linear10PercentEvery1Minute 
         Alarms:
