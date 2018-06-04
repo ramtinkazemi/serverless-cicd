@@ -2,7 +2,7 @@ version: 0.1
 phases:
   install:
     commands:
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket cashrewards.dev.ramtin-test-slscicd --output-template-file outputSamTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket cashrewards.dev.bitbucket --s3-prefix /ShopGoDev/serverless-cicd/master/deploy --output-template-file outputSamTemplate.yaml
 #      - aws s3 cp outputSamTemplate.yaml s3://codepipeline-ap-southeast-2-992540822634/ramtin/MyAppBuild/
 artifacts:
   type: zip

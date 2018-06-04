@@ -3,7 +3,7 @@ Resources:
   - myLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
-        Name: "mycicdstack-TimeFunction-QQ8HEDFP1V63"
+        Name: "serverless-cicd-test-function"
         Alias: "Live"
         CurrentVersion: "Live"
         TargetVersion: "$Latest"

@@ -1,13 +1,13 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: An AWS Serverless Specification template describing your function.
 Resources:
-  mycicdstackTimeFunctionQQ8HEDFP1V63:
+  serverless-cicd-test-function:
     Properties:
       AutoPublishAlias: Live
-      CodeUri: s3://cashrewards.dev.ramtin-test-slscicd/4fbf86dfc51bae4379ea632a3f31f4c7
+      CodeUri: s3://cashrewards.dev.bitbucket//ShopGoDev/serverless-cicd/master/deploy//764d27bf20548c733d288d3fdf06c8d4
       DeploymentPreference:
         Alarms: null
-        Type: Canary10Percent10Minutes
+        Type: Linear10PercentEvery1Minute
       Handler: index.handler
       Runtime: nodejs6.10
     Type: AWS::Serverless::Function
