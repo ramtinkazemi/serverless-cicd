@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Description: An AWS Serverless Specification template describing your function.
 Resources:
-  serverless-cicd-test-function:
+  serverlesscicdtestfunction:
     Properties:
       AutoPublishAlias: Live
       CodeUri: s3://cashrewards.dev.bitbucket//ShopGoDev/serverless-cicd/master/deploy/b789d9fef0374b4a1a9144837475fea5
