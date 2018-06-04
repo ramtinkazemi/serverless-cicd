@@ -4,7 +4,7 @@ Resources:
   serverless-cicd-test-function:
     Properties:
       AutoPublishAlias: Live
-      CodeUri: s3://cashrewards.dev.bitbucket//ShopGoDev/serverless-cicd/master/deploy//764d27bf20548c733d288d3fdf06c8d4
+      CodeUri: s3://cashrewards.dev.bitbucket//ShopGoDev/serverless-cicd/master/deploy/b789d9fef0374b4a1a9144837475fea5
       DeploymentPreference:
         Alarms: null
         Type: Linear10PercentEvery1Minute
