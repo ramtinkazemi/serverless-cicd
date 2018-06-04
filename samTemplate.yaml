@@ -7,9 +7,8 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs6.10
-      CodeUri: 
+      CodeUri: .
       AutoPublishAlias: Live
-
       DeploymentPreference:
         Type: Linear10PercentEvery1Minute 
         Alarms:
